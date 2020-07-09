@@ -29,6 +29,8 @@ export default {
   ** Global CSS
   */
   css: [
+    '~/css/main.css',
+    'bootstrap/dist/css/bootstrap.min.css'
   ],
   /*
   ** Plugins to load before mounting the App
