@@ -23,14 +23,17 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+    ],
+    script:[
+      { src: 'https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js' }
     ]
   },
   /*
   ** Global CSS
   */
   css: [
-    '~/css/main.css',
-    'bootstrap/dist/css/bootstrap.min.css'
+    'bootstrap/dist/css/bootstrap.min.css',
+    '~/css/main.css'
   ],
   /*
   ** Plugins to load before mounting the App
