@@ -1,6 +1,6 @@
 <template>
   <div>
-      <section class="section60-2">
+      <section class="section-post">
         <div class="container p-5 mt-5" style="background-color: white; border-radius: 20px">
           <h6 style="color: green">{{ post.category }}</h6>
           
@@ -25,5 +25,10 @@ export default {
 </script>
 
 <style>
-
+.nuxt-content h1{
+  font-size: 2.5em;
+}
+.nuxt-content h2{
+  font-size: 2em;
+}
 </style>

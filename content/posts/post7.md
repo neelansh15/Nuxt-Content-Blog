@@ -5,5 +5,6 @@ author: Neelansh Mathur
 category: Competitive Programming
 ---
 
-# What is VueJS?
+# What is Competitive Programming?
+## What is Javascript and VueJS?
 Some text here to fill up the space. VueJS which is a framework for Javascript.
