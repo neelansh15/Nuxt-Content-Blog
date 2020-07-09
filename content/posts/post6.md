@@ -2,7 +2,7 @@
 title: Getting started with VueJS
 description: This is the most amazing thing available on the planet. Vue life better.
 author: Neelansh Mathur
-category: VueJS
+category: Javascript
 ---
 
 # What is VueJS?

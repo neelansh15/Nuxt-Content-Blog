@@ -1,6 +1,14 @@
 
-.section80{
+.section60{
     height: 60vh;
     width: 100%;
     background-color: antiquewhite;
+}
+
+.section60-2{
+    height: 60vh;
+    width: 100%;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
 }

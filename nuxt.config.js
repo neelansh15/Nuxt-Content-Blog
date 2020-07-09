@@ -34,7 +34,8 @@ export default {
   */
   css: [
     'bootstrap/dist/css/bootstrap.min.css',
-    '~/css/main.css'
+    '~/css/main.css',
+    '@/css/sections.css'
   ],
   /*
   ** Plugins to load before mounting the App

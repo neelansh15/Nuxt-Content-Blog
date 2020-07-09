@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="section80 d-flex justify-content-center align-items-center">
+    <section class="section60 d-flex justify-content-center align-items-center">
       <div class="d-flex flex-column align-items-center">
         <h1 class="display-2">Technospective</h1>
         <h2 class="lead">A beautiful day to code!</h2>
@@ -14,7 +14,7 @@
 
       <h2 class="mt-5 mb-4">Latest Posts</h2>
       <div class="row d-flex justify-content-center">
-        <Card :post = "post" class="col-md-5" v-for="post in posts" :key="post.body" />
+        <Card :post = "post" class="col-md-5" v-for="post in posts" :key="post.title" />
       </div>
 
     </div>
@@ -26,6 +26,7 @@
 export default {
   async asyncData({ $content }){
     const posts = await $content('posts').sortBy('title', 'asc').limit(6).fetch()
+    console.log(posts)
     return {
       posts
     }
@@ -34,5 +35,4 @@ export default {
 </script>
 
 <style>
-@import '~/css/sections.css';
 </style>
