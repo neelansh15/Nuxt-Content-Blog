@@ -12,9 +12,9 @@
         <FeaturedCard />
       </div>
 
-      <h2 class="mt-5 mb-4">Top Posts</h2>
-      <div class="row">
-        <Card class="col-md-6 mb-2" v-for="n in 6" :key="n" />
+      <h2 class="mt-5 mb-4">Latest Posts</h2>
+      <div class="row d-flex justify-content-center">
+        <Card :post = "post" class="col-md-5" v-for="post in posts" :key="post.body" />
       </div>
 
     </div>
@@ -23,7 +23,14 @@
 </template>
 
 <script>
-export default {}
+export default {
+  async asyncData({ $content }){
+    const posts = await $content('posts').sortBy('title', 'asc').limit(6).fetch()
+    return {
+      posts
+    }
+  }
+}
 </script>
 
 <style>
