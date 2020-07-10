@@ -1,5 +1,5 @@
 <template>
-  <div class="card border-0 mx-2 mb-2 p-3 makeRound">
+  <div class="card border-0 p-3 makeRound">
     <div class="card-body">
       <h6 style="color: green">{{ post.category }}</h6>
       <h3 class="card-title">

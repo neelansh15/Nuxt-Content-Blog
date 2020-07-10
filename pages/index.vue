@@ -13,8 +13,8 @@
       </div>
 
       <h2 class="mt-5 mb-4">Latest Posts</h2>
-      <div class="row d-flex justify-content-center">
-        <Card :post = "post" class="col-md-5" v-for="post in posts" :key="post.title" />
+      <div class="mygrid">
+        <Card :post = "post" class="" v-for="post in posts" :key="post.title" />
       </div>
 
     </div>
@@ -35,4 +35,17 @@ export default {
 </script>
 
 <style>
+.mygrid{
+  display: grid;
+  grid-template-columns: auto;
+  gap: 0.5em;
+}
+
+@media only screen and (min-width: 768px){
+  .mygrid{
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 1em;
+  }
+}
 </style>
