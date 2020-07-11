@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="section60 d-flex justify-content-center align-items-center">
+    <section class="section-home d-flex justify-content-center align-items-center">
       <div class="d-flex flex-column align-items-center">
         <h1 style="font-size: 4em">Technospective</h1>
         <h2 class="lead">A beautiful day to code!</h2>
@@ -26,7 +26,6 @@
 export default {
   async asyncData({ $content }){
     const posts = await $content('posts').sortBy('title', 'asc').limit(6).fetch()
-    console.log(posts)
     return {
       posts
     }

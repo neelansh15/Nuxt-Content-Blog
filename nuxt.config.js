@@ -9,7 +9,7 @@ export default {
   ** Nuxt target
   ** See https://nuxtjs.org/api/configuration-target
   */
-  target: 'server',
+  target: 'static',
   /*
   ** Headers of the page
   ** See https://nuxtjs.org/api/configuration-head
@@ -34,8 +34,8 @@ export default {
   */
   css: [
     'bootstrap/dist/css/bootstrap.min.css',
+    '@/css/sections.css',
     '~/css/main.css',
-    '@/css/sections.css'
   ],
   /*
   ** Plugins to load before mounting the App
