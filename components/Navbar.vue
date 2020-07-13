@@ -34,14 +34,14 @@
               data-toggle="dropdown"
               aria-haspopup="true"
               aria-expanded="false"
-            >Categories</a>
+            >Topics</a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="#">Web Development</a>
               <a class="dropdown-item" href="#">App Development</a>
               <a class="dropdown-item" href="#">VueJS</a>
               <a class="dropdown-item" href="#">ReactJS</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">All Categories</a>
+              <a class="dropdown-item" href="#">All Topics</a>
             </div>
           </li>
         </ul>
