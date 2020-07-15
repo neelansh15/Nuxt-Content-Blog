@@ -9,12 +9,12 @@
 
     <div class="container">
       <div class="d-flex justify-content-center align-items-center" style="margin-top: -5em">
-        <FeaturedCard :post = "posts[posts.length - 1]" />
+        <FeaturedCard :post="posts[posts.length - 1]" />
       </div>
 
       <h2 class="mt-5 mb-4">Latest Posts</h2>
       <div class="mygrid">
-        <Card :post = "post" class="" v-for="post in posts" :key="post.title" />
+        <Card :post="post" v-for="post in posts" :key="post.title + Math.round(Math.random() * 100)" />
       </div>
 
     </div>
@@ -25,7 +25,7 @@
 <script>
 export default {
   async asyncData({ $content }){
-    const posts = await $content('posts').sortBy('title', 'asc').limit(6).fetch()
+    const posts = await $content('posts').sortBy('updatedAt', 'desc').limit(6).fetch()
     return {
       posts
     }

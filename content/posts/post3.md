@@ -6,4 +6,4 @@ category: ReactJS
 ---
 
 # What is ReactJS?
-Some text here to fill up the space. ReactJS which is a framework for Javascript.
+ReactJS which is a framework for Javascript. Crikey, it's very popular!
