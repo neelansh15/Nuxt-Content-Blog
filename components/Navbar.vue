@@ -1,7 +1,7 @@
 <template>
   <div>
     <nav class="navbar navbar-expand-lg navbar-light" style="padding: 1em 2em">
-      <nuxt-link class="navbar-brand" to="/">Technospective {{ activePage }} </nuxt-link>
+      <nuxt-link class="navbar-brand" to="/">Technospective</nuxt-link>
       <button
         class="navbar-toggler"
         type="button"
@@ -16,14 +16,14 @@
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item" :class="(activePage == 'Home') ? 'active': ''">
-            <nuxt-link class="nav-link" to="/" @click="$store.commit('setActivePage', 'Home')">
+          <li class="nav-item" :class="(activePage == 'Home') ? 'active': ''"  @click="$store.commit('setActivePage', 'Home')">
+            <nuxt-link class="nav-link" to="/">
               Home
               <!-- <span class="sr-only">(current)</span> -->
           </nuxt-link>
           </li>
-          <li class="nav-item" :class="(activePage == 'All Posts') ? 'active': ''">
-            <nuxt-link class="nav-link" to="/posts" @click="$store.commit('setActivePage', 'Home')">
+          <li class="nav-item" :class="(activePage == 'All Posts') ? 'active': ''" @click="$store.commit('setActivePage', 'All Posts')">
+            <nuxt-link class="nav-link" to="/posts">
             All Posts
             </nuxt-link>
           </li>
