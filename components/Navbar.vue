@@ -66,7 +66,7 @@ export default {
   computed: {
     activePage(){
       return this.$store.state.activePage
-    }
+    },
   },
 };
 </script>

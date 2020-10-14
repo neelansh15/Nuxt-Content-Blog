@@ -17,5 +17,11 @@
     "holderjs": "^2.9.7",
     "nuxt": "^2.13.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "git-scripts": "^0.4.3",
+    "surge": "^0.21.6"
+  },
+  "git":{
+    "pre-push": "surge --project ./dist --domain technospective.surge.sh"
+  }
 }
